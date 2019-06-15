@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+@import 'normalize';
+@import 'mixins';
+
+$text-color: #444;
+$header-color: #fff;
+$brand-color: #e71cb4;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font: 10px/1.6 Poppins, serif;
+	height: 100%;
+}
+
+body {
+	font-size: 2.2rem;
+	color: $text-color;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1170px;
+	widows: 96%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+nav {
+	padding: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.logo {
+	color: $header-color;
+	@include tdn();
+	font-size: 3rem;
+	font-weight: 700;
+	@include hover() {
+		color: $brand-color;
+	} 
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	&__item {
+		display: inline-block;
+		margin: 0 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		color: $header-color;
+		border-bottom: 1px solid transparent;
+		font-size: 1.6rem;
+		font-weight: 500;
+		@include tdn();
+		@include hover() {
+			color: $brand-color;
+			border-color:$brand-color;
+		} 
+	}
+}
+
+.cover {
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+	color: $header-color;
+	background-image: url('../img/img1.jpg');	
+	&__title {
+		margin: 30px 0;
+		line-height: 1;
+		font-size: 6rem;
+	}
+	&__subtitle {
+		font-size: 3rem;
+		margin: 0 0 2em;
+
+	}
+}
+
+.flex {
+	display: flex;
+	&--column {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.cover & {
+		height: 100%;
+	}
+}
+
+.btn {
+	border-radius: 10px;
+	border: 1px solid $brand-color;
+	font-size: 1.6rem;
+	padding: 15px 20px;
+	color: $header-color;
+	background: $brand-color;
+	@include tdn();
+	@include hover() {
+		background: transparent;
+		color: $brand-color;
+	}	
+	&--transparent {
+		background-color: transparent;
+		border-color: $header-color;
+		@include hover() {
+			background: $header-color;
+			color: $text-color;
+		} 
+	}
+}
