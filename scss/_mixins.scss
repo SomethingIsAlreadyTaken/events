@@ -3,9 +3,10 @@
 }
 
 @mixin tr($prop) {
-	transition: $prop .2s ease-in;
+	transition: $prop .3s ease-in;
 }
-@mixin hover() {
+
+@mixin hover {
 	@include tr(all);
 	&:hover,
 	&:focus,
