@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 
 @import 'normalize';
+@import 'font-awesome';
 @import 'mixins';
 
 $text-color: #444;
 $header-color: #fff;
 $brand-color: #e71cb4;
+
+$yellow: #ffde16;
+$coral: #ffbd9e;
+$blue: #20c9e0;
+$green: #2eac66;
+$pink: #ff6179;
 
 * {
 	box-sizing: border-box;
@@ -128,5 +135,72 @@ nav {
 			background: $header-color;
 			color: $text-color;
 		} 
+	}
+}
+
+.section {
+	padding: 10rem 0;
+	&__title {
+		font-size: 6.2rem;
+		margin-top: 0;
+		&--brand {
+			color: $brand-color;
+		}
+	}
+	&__subtitle {
+		font-size: 3.2rem;
+		margin-bottom: 10rem;
+	}
+}
+
+.courses {
+	&__title {
+		font-size: 3.6rem;
+	}
+	&__list {
+		padding: 0;
+		margin: 7rem 0;
+		list-style: none;
+		columns: 2;
+	}
+	&__item {
+		padding: 3rem;
+	}
+}
+
+.course {
+	display: flex;
+
+	&__number {
+		padding-right: 4rem;
+		font-size: 4.4rem;
+		line-height: 1;
+		font-weight: 700;
+		color: $yellow;
+		&--coral {
+			color: $coral;
+		}
+		&--green {
+			color: $green;
+		}
+		&--blue {
+			color: $blue;
+		}
+		&--pink {
+			color: $pink;
+		}
+		&:before {
+			content: '\f054';
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 700;
+			padding-right: 4rem;
+			font-size: .7em;
+		}
+		&:after {
+			content: '.';
+		}
+	}
+	&__text {
+		font-weight: 500;
 	}
 }

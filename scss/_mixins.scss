@@ -9,7 +9,8 @@
 	@include tr(all);
 	&:hover,
 	&:focus,
-	&:active {
+	&:active,
+	&--active {
 		@content;
 	}
 }
