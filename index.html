@@ -15,30 +15,35 @@
 					<a href="#" class="logo">Events</a>
 					<ul class="menu">
 						<li class="menu__item">
-							<a href="#" class="menu__link">About</a>
+							<a href="#about" class="menu__link">About</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Jury</a>
+							<a href="#competitors" class="menu__link">Competitors</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Competitors</a>
+							<a href="#jury" class="menu__link">Jury</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Contact Us</a>
+							<a href="#contact" class="menu__link">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main>
-			<section class="cover" style="background-image: url('img/img1.jpg');">
+			<section class="cover" >
+				<div class="slider">
+					<div class="slide" style="background-image: url('img/img1.jpg');"></div>
+					<div class="slide" style="background-image: url('img/img2.jpg');"></div>
+					<div class="slide" style="background-image: url('img/img3.jpg');"></div>
+				</div>
 				<div class="container flex flex--column">
 					<h1 class="cover__title">Are you ready for the Battle?</h1>
 					<p class="cover__subtitle">The clash between graphic designers</p>
 					<a href="#" class="btn btn--transparent">Download Our Case Study</a>
 				</div>
 			</section>
-			<section class="section">
+			<section class="section" id="about">
 				<div class="container">
 					<h2 class="section__title section__title--brand">Design Battles</h2>
 					<div class="section__subtitle">
@@ -90,7 +95,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section--gradient">
+			<section class="section section--gradient" id="competitors">
 				<div class="container">
 					<div class="section__heading">
 						<h2 class="section__title">They already said Battles</h2>
@@ -169,32 +174,32 @@
 					</div>
 					<div class="countdown">
 						<div class="countdown__item">
-							<div class="countdown__number">
-								37
+							<div class="countdown__number" id="days">
+								00
 							</div>
 							<div class="countdown__text">
 								days
 							</div>
 						</div>
 						<div class="countdown__item">
-							<div class="countdown__number">
-								13
+							<div class="countdown__number" id="hours">
+								00
 							</div>
 							<div class="countdown__text">
 								hours
 							</div>
 						</div>
 						<div class="countdown__item">
-							<div class="countdown__number">
-								25
+							<div class="countdown__number" id="minutes">
+								00
 							</div>
 							<div class="countdown__text">
 								minutes
 							</div>
 						</div>
 						<div class="countdown__item">
-							<div class="countdown__number">
-								46
+							<div class="countdown__number" id="seconds">
+								00
 							</div>
 							<div class="countdown__text">
 								seconds
@@ -233,7 +238,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="section section--pink">
+			<section class="section section--pink" id="jury">
 				<div class="container">
 					<div class="section__heading">
 						<h2 class="section__title">Jury 2017</h2>
@@ -275,7 +280,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section">
+			<section class="section" id="contact">
 				<div class="container container--sm">
 					<div class="section__heading">
 						<h2 class="section__title">Contact Us</h2>
@@ -350,5 +355,9 @@
 				</ul>
 			</div>
 		</footer>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/slick.js"></script>
 	</body>
 </html>
