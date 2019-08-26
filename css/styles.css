@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700%7CPoppins:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700|Poppins:400,500,700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -4825,7 +4825,7 @@ body {
   padding: 0 15px;
   margin: 0 auto; }
   .container--sm {
-    min-width: 700px; }
+    max-width: 700px; }
 
 header {
   position: absolute;
@@ -4951,10 +4951,10 @@ nav {
     font-size: 3.2rem;
     margin-bottom: 10rem; }
   .section--gradient {
+    background-color: #333399;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #333399), color-stop(90%, #fd01cb));
     background-image: -o-linear-gradient(top, #333399 50%, #fd01cb 90%);
     background-image: linear-gradient(to bottom, #333399 50%, #fd01cb 90%);
-    background-color: #333399;
     color: #fff; }
   .section--pink {
     background-color: #ffe9eb; }
@@ -4968,10 +4968,7 @@ nav {
   list-style: none;
   -webkit-columns: 2;
   -moz-columns: 2;
-  columns: 2;
-  -webkit-column-gap: 10;
-  -moz-column-gap: 10;
-  column-gap: 10; }
+  columns: 2; }
 
 .courses__item {
   margin-bottom: 3rem; }
@@ -5062,11 +5059,11 @@ nav {
   justify-content: center; }
   .countdown__item {
     text-align: center;
-    font-family: 'open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #4c0241;
+    border: 1px solid #4c0241;
     padding: 35px 45px;
-    margin: 0 35px;
-    border: 1px solid #4c0241; }
+    margin: 0 35px; }
     .countdown__item:first-child {
       background-color: transparent;
       border-color: #fff; }
@@ -5084,8 +5081,6 @@ nav {
 
 .sponsor {
   display: inline-block; }
-  .sponsor__logo {
-    width: 100%; }
   .sponsor__link {
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -5115,16 +5110,17 @@ nav {
     padding: 15px 0;
     border: none;
     outline: none;
-    border-bottom: 5px solid #555555;
+    border-bottom: 5px solid #555555; }
+  .contact-form textarea {
     resize: none; }
   .contact-form__label {
     display: block;
     z-index: 1;
-    position: absolute;
     -webkit-transform: translate(0, -170%);
     -ms-transform: translate(0, -170%);
     -o-transform: translate(0, -170%);
     transform: translate(0, -170%);
+    position: absolute;
     -webkit-transition: -webkit-transform 0.3s ease-in;
     transition: -webkit-transform 0.3s ease-in;
     -o-transition: -o-transform 0.3s ease-in;
@@ -5151,7 +5147,8 @@ nav {
     background-color: #555555;
     padding: 15px 25px;
     border: 5px solid #555555;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     letter-spacing: 2px;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -5171,7 +5168,7 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
   margin: 0 auto; }
   .newsletter-form__input {
     -webkit-box-flex: 1;
@@ -5179,7 +5176,7 @@ footer {
     flex: 1 0 auto;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     outline: none;
     margin-right: 15px; }
     .newsletter-form__input:focus {
@@ -5188,7 +5185,7 @@ footer {
 .socials {
   text-align: center;
   margin-top: 70px;
-  padding-left: 0px; }
+  padding-left: 0; }
 
 .social {
   display: inline-block;
@@ -5202,7 +5199,7 @@ footer {
     color: #fff;
     text-align: center;
     line-height: 60px;
-    font-size: 2em;
+    font-size: 1.4em;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; }
@@ -5222,4 +5219,5 @@ footer {
   width: 100%;
   height: 100vh;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat; }
